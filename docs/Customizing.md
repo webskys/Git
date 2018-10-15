@@ -1,0 +1,12 @@
+# 自定义 Git
+
+到目前为止，我阐述了 Git 基本的运作机制和使用方式，介绍了 Git 提供的许多工具来帮助你简单且有效地使用它。 在本章，我将会介绍 Git 的一些重要的配置方法和钩子机制以满足自定义的要求。通过这些工具，它会和你和公司或团队配合得天衣无缝。
+
+ - [配置 Git](#docs/Customizing/Configuration)
+ - [Git属性](#docs/Customizing/Attributes)
+ - [Git挂钩](#docs/Customizing/Hooks)
+ - [Git 强制策略实例](#docs/Customizing/Policy)
+
+
+
+

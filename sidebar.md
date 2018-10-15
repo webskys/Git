@@ -1,0 +1,71 @@
+﻿# Git 中文参考指南
+
+[分布式版本控制系统]
+
+## 目录
+1. [导言](#README)
+1. [起步](#docs/started)
+ - [关于版本控制](#docs/started/About-Version-Control)
+ - [Git 简史与 Git 基础](#docs/started/Basics)
+ - [Git 使用方式与 安装 Git](#docs/started/Installing)
+ - [初次运行 Git 前的配置](#docs/started/First-Time-Git-Setup)
+ - [获取帮助与小结](#docs/started/Summary)
+1. [Git 基础](#docs/Basics)
+ - [取得项目的 Git 仓库](#docs/Basics/Getting-a-Git-Repository)
+ - [记录每次更新到仓库](#docs/Basics/Recording-Changes)
+ - [查看提交历史](#docs/Basics/Commit-History)
+ - [撤消操作](#docs/Basics/Undoing)
+ - [远程仓库的使用](#docs/Basics/Remotes)
+ - [打标签](#docs/Basics/Tagging)
+ - [技巧:自动补全与别名](#docs/Basics/Tricks)
+1. [Git 分支](#docs/Branching)
+ - [Git 分支简介](#docs/Branching/introduce)
+ - [Git 分支的新建与合并](#docs/Branching/Merging)
+ - [分支的管理与开发流程](#docs/Branching/Workflows)
+ - [远程分支](#docs/Branching/Remote)
+ - [分支的衍合](#docs/Branching/Rebasing)
+1. [服务器上的 Git](#docs/Server)
+ - [协议](#docs/Server/Protocols)
+ - [服务器上部署Git与生成SSH公钥](#docs/Server/Git-on-a-Server)
+ - [架设服务器与公共访问](#docs/Server/Setting)
+ - [GitWeb、Smart HTTP](#docs/Server/GitWeb)
+ - [Git 守护进程与托管服务](#docs/Server/Daemon)
+1. [ 分布式 Git](#docs/Distributed)
+ - [分布式工作流程](#docs/Distributed/Workflows)
+ - [为项目作贡献](#docs/Distributed/Contributing)
+ - [项目的管理](#docs/Distributed/Maintaining)
+1. [ Git 工具](#docs/Tools)
+ - [修订版本（Revision）选择](#docs/Tools/Selection)
+ - [交互式暂存）选择](#docs/Tools/Staging)
+ - [储藏（Stashing））选择](#docs/Tools/Stashing)
+ - [重写历史](#docs/Tools/Rewriting)
+ - [使用 Git 调试](#docs/Tools/Debugging)
+ - [子模块](#docs/Tools/Submodules)
+ - [子树合并](#docs/Tools/Subtree)
+1. [ 自定义 Git](#docs/Customizing)
+ - [配置 Git](#docs/Customizing/Configuration)
+ - [Git属性](#docs/Customizing/Attributes)
+ - [Git挂钩](#docs/Customizing/Hooks)
+ - [Git 强制策略实例](#docs/Customizing/Policy)
+1. [Git 与其他系统](#docs/Other)
+ - [Git 与 Subversion](#docs/Other/Subversion)
+ - [迁移到 Git](#docs/Other/Migrating)
+1. [Git 内部原理](#docs/Internals)
+ - [底层命令和高层命令](#docs/Internals/Porcelain)
+ - [Git 对象](#docs/Internals/Objects)
+ - [Git References](#docs/Internals/References)
+ - [Packfiles](#docs/Internals/Packfiles)
+ - [The Refspec](#docs/Internals/Refspec)
+ - [传输协议](#docs/Internals/Protocols)
+ - [维护及数据恢复](#docs/Internals/Recovery)
+1. [ Git 命令](#docs/commands)
+
+
+
+
+
+## 其他
+[源码](https://github.com/webskys/git)
+
+
+
