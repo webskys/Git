@@ -42,20 +42,20 @@ a:hover{
     color: #005d8c;
 }
 #sidebar{
-    width: 300px;
+    width: 280px;
     padding: 10px 10px 10px 20px;
     position: fixed;
     top: 0;
     left: 50%;
-    margin-left: -620px;
+    margin-left: -600px;
     height: 100%;
     overflow-y:auto;
     border-right: 2px solid #e0e0e0;
 }
 .right{
-    width: 300px;
+    width: 280px;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y:auto;
     padding: 15px;
     position: fixed;
     top: 0;
@@ -116,7 +116,7 @@ a:hover{
     bottom: 50px;
     cursor: pointer;
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(90px);
     animation: all 0.3s linear;
 }
 .gotop.active{
@@ -255,6 +255,7 @@ a:hover{
     color: #25649F;
 }*/
 .content h1,.content h2,.content h3,.content h4,.content h5,.content h6{
+    line-height: 1.4;
     margin-bottom: 10px;
 }
 .content h1,.content h2{
@@ -330,3 +331,61 @@ a:hover{
         -webkit-transform: scale(1.0);
     }
 }
+
+#menubar{
+    display: none;
+    position:fixed;
+    top: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    background-color: #f9f9f9;
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+}
+#menubar span{
+    display: block;
+    width: 70%;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #00a0f0;
+}
+
+/* 768px 992px 1200px */
+@media (max-width: 768px) {
+    #menubar{
+        display: block;
+    }
+    .right{
+        display: none
+    }
+    #sidebar{
+        display: none;
+        position: initial;
+        width: initial;
+        top: initial;
+        left: initial;
+        margin-left:initial;
+        height: initial;
+        overflow-y: initial;
+        border-right: none;
+    }
+    #sidebar.active{
+        display: block;
+    }
+    .content-warp{
+        width: 100%;
+    }
+    .progress-warp{
+        left: 0;
+        margin-left: initial;
+    }
+    .gotop{
+        left: initial;
+        right: 5px;
+        margin-left: initial;
+    }
+
+}
+
+

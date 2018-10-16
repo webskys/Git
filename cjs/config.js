@@ -5,7 +5,8 @@ $(function () {
     $(document).ajaxStart(showLoading);
     $(document).ajaxStop(hideLoading);
     $.mdBook({
-        sidebarFile: "sidebar.md"
+        sidebarFile: "sidebar.md",
+        callback:cb
     });
     showtop();
     $(window).on('scroll',showProgress);
@@ -19,6 +20,15 @@ $(function () {
         event.preventDefault();
         $('body,html').animate({scrollTop:0},200);
     });
+
+    $("#sidebar").removeClass('active');
+    $("#menubar").on('click',function () {
+        $("#sidebar").toggleClass('active');
+        $('body,html').animate({scrollTop:0},200);
+    });
+    function cb() {
+        $("#sidebar").removeClass('active');
+    }
     function showtop (){
         if($(this).scrollTop() > 200){
             $('#gotop').addClass('active')
